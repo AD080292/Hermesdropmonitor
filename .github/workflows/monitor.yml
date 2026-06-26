@@ -1,8 +1,11 @@
+
 name: Hermes Stock Monitor
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 9 * * *"       # 1pm Dubai
+    - cron: "0 10 * * *"      # 2pm Dubai
+    - cron: "*/15 12-18 * * *" # every 15 min, 4pm-10pm Dubai
   workflow_dispatch:
 
 jobs:
